@@ -1,7 +1,7 @@
-package lab_12;
+package api_learning;
 
+import driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LaunchBrowser {
 
