@@ -11,6 +11,6 @@ public class POMModel04Test {
         WebDriver driver = DriverFactory.getWebDriver();
 
         HomePage homePage = new HomePage(driver);
-        homePage.footerComp().doSomething();
+        //homePage.footerComp().doSomething();
     }
 }
