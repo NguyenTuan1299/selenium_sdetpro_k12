@@ -1,11 +1,18 @@
 package test_flows.global;
 
+import models.components.global.TopMenuComponent;
+import static models.components.global.TopMenuComponent.MainCatItem;
+import static models.components.global.TopMenuComponent.SublistComponent;
 import models.components.global.footer.*;
 import models.pages.BasePage;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.security.SecureRandom;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -29,6 +36,41 @@ public class FooterTestFlow {
         verifyCustomerServiceColumn(customerServiceColumnComp);
         verifyMyAccountColumn(myAccountColumnComp);
         verifyFollowUsColumn(followUsColumnComp);
+    }
+
+    public void verifyProductCatFooterComponent() {
+        // Randomly pickup MainItem from TopMenuComponent
+        BasePage basePage = new BasePage(driver);
+        TopMenuComponent topMenuComponent = basePage.topMenuComp();
+        List<MainCatItem> mainCatsElem = topMenuComponent.mainItemsElem();
+        Assert.assertFalse(mainCatsElem.isEmpty(), "[ERR] There is no item on top menu");
+        int randomMainItemIndex = new SecureRandom().nextInt(mainCatsElem.size());
+        MainCatItem randomMainItemElem = mainCatsElem.get(randomMainItemIndex);
+        String randomCatHref = randomMainItemElem.catItemLinkElem().getAttribute("href");
+        randomMainItemElem.catItemLinkElem().click();
+
+        // Get sublist(if any) then click on a random sub-item / MainItem (if has no sublist)
+//        List<SublistComponent> sublistComps = randomMainItemElem.sublistComps();
+//        System.out.println(sublistComps.size());
+//        if(sublistComps.isEmpty()){
+//            randomMainItemElem.catItemLinkElem().click();
+//        } else {
+//            int randomIndex = new SecureRandom().nextInt(sublistComps.size());
+//            SublistComponent randomCatItemComp = sublistComps.get(randomIndex);
+//            randomCatHref = randomCatItemComp.getComponent().getAttribute("href");
+//            randomCatItemComp.getComponent().click();
+//        }
+
+        // Make sure we are on the right page | Wait until navigation is done
+        try {
+            WebDriverWait wait = randomMainItemElem.componentWait();
+            wait.until(ExpectedConditions.urlContains(randomCatHref));
+        } catch (TimeoutException ignored){
+            Assert.fail("[ERR] Target page is not matched");
+        }
+
+        // Call common verify method
+        verifyFooterComponent();
     }
 
     private void verifyInformationColumn(FooterColumnComponent informationColumnComp) {
