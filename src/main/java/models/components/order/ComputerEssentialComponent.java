@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public abstract class ComputerEssentialComponent extends BaseItemComponent {
 
-    private final static By allOptionsSel = By.cssSelector(".option-list > input");
+    private final static By allOptionsSel = By.cssSelector(".option-list input");
 
     public ComputerEssentialComponent(WebDriver driver, WebElement component) {
         super(driver, component);
@@ -37,7 +37,7 @@ public abstract class ComputerEssentialComponent extends BaseItemComponent {
     }
 
     protected String selectCompOption(String type) {
-        String selectorStr = "//label[contains(text()," + type + ")]";
+        String selectorStr = "//label[contains(text()," + "\"" + type + "\"" + ")]";
         By optionSelector = By.xpath(selectorStr);
         WebElement optionEle = null;
         try {
@@ -47,6 +47,7 @@ public abstract class ComputerEssentialComponent extends BaseItemComponent {
         if(optionEle == null){
             throw new RuntimeException("[ERR] The option " + type + " is not existing to select!");
         }
+        optionEle.click();
         return optionEle.getText().trim();
     }
 }
