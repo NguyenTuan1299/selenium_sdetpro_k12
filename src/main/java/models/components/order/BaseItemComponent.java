@@ -1,5 +1,6 @@
 package models.components.order;
 
+import io.qameta.allure.Step;
 import models.components.Component;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,20 +23,24 @@ public class BaseItemComponent extends Component {
         findElement(headerAddToCartLinkSel).click();
     }
 
+    @Step("Getting product price")
     public double productPrice(){
         String productPriceStr = findElement(productPriceSel).getText().trim();
         return Double.parseDouble(productPriceStr);
     }
 
+    @Step("Buying with quantity: {quantity}")
     public void setProductQuantity(int quantity){
         findElement(productQuantitySel).clear();
         findElement(productQuantitySel).sendKeys(String.valueOf(quantity));
     }
 
+    @Step("Click on cart button")
     public void clickOnAddCartBtn() {
         findElement(addToCartBtn).click();
     }
 
+    @Step("Wait until item added to cart")
     public void waitUntilItemAddedToCart(){
         String successMsg = "The product has been added to your shopping cart";
         wait.until(ExpectedConditions.textToBePresentInElementLocated(barNotificationSel, successMsg));

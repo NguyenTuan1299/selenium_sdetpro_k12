@@ -110,7 +110,7 @@ public class FooterTestFlow {
     private void testFooterColumn(FooterColumnComponent footerColumnComp, List<String> expectedLinkTexts, List<String> expectedHrefs) {
         List<String> actualLinkTexts = new ArrayList<>();
         List<String> actualHrefs = new ArrayList<>();
-
+        expectedHrefs.replaceAll(originHref -> "https://demowebshop.tricentis.com" + originHref);
         footerColumnComp.linksEle().forEach(columnItem -> {
             actualLinkTexts.add(columnItem.getText());
             actualHrefs.add(columnItem.getAttribute("href"));
