@@ -36,9 +36,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
 
 ### Allure reports
 allure-*
 
-### screenshots folder
+### Screenshot folfer
 screenshots
+/allure-report/
+/allure-results/
+/screenshots/
