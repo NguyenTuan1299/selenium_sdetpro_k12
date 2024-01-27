@@ -1,9 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Regression" verbose="1" >
-    <test name="Footer">
+<suite name="Regression" parallel="tests" thread-count="10">
+    <test name="Footer" parallel="tests" thread-count="10">
         <classes>
             <class name="tests.global.footer.FooterTest"/>
+        </classes>
+    </test>
+    <test name="Computer order" parallel="tests" thread-count="10">
+        <classes>
+            <class name="tests.order.computer.BuyingCheapComputerTest"/>
+            <class name="tests.order.computer.BuyingStandardComputerTest"/>
         </classes>
     </test>
 </suite>

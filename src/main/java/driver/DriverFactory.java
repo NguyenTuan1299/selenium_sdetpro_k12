@@ -8,7 +8,9 @@ import java.time.Duration;
 
 public class DriverFactory {
 
-    public static WebDriver getWebDriver(){
+    private WebDriver driver;
+
+    public static WebDriver getWebDriver() {
         ChromeOptions chromeOptions = new ChromeOptions();
         // This is a good workaround to not enable password manger popup from chrome
         chromeOptions.addArguments("--incognito");
@@ -20,5 +22,20 @@ public class DriverFactory {
          * */
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15L));
         return driver;
+    }
+
+    public WebDriver getDriver() {
+        if (driver == null) {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--incognito");
+            this.driver = new ChromeDriver(chromeOptions);
+        }
+        return this.driver;
+    }
+
+    public void closeBrowserSession() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
