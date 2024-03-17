@@ -24,15 +24,16 @@ public class Main {
             }
         }
 
-        String browser = System.getProperty("browser");
-        if (browser == null) {
-            throw new RuntimeException("Please provide browser via -Dbrowser");
-        }
-        try {
-            BrowserType.valueOf(browser);
-        } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("The browser " + browser + " is not supported, we cover for: " + Arrays.toString(BrowserType.values()));
-        }
+        String browser = "chrome";
+//        String browser = System.getProperty("browser");
+//        if (browser == null) {
+//            throw new RuntimeException("Please provide browser via -Dbrowser");
+//        }
+//        try {
+//            BrowserType.valueOf(browser);
+//        } catch (IllegalArgumentException e) {
+//            throw new IllegalArgumentException("The browser " + browser + " is not supported, we cover for: " + Arrays.toString(BrowserType.values()));
+//        }
 
         // Parallel session data, can be from env variable
         int maxParallelSession = 10;
@@ -79,14 +80,14 @@ public class Main {
         }
 
         // Set parallel session data
-        boolean isTestingOnSafari = browser.equals("safari");
-        if(!isTestingOnSafari){
+        boolean isTestingOnEdge = browser.equals("MicrosoftEdge");
+        if(!isTestingOnEdge){
             suite.setParallel(XmlSuite.ParallelMode.TESTS);
             suite.setThreadCount(maxParallelSession);
         }
 
-        if(isTestingOnSafari){
-            suite.addIncludedGroup("safari");
+        if(isTestingOnEdge){
+            suite.addIncludedGroup("MicrosoftEdge");
         }
 
         suite.setTests(allTests);
