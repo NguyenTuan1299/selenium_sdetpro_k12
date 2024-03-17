@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-14T21:20:45 ICT" name="Regression" finished-at="2024-03-14T21:22:25 ICT" duration-ms="100080">
+    <groups>
+    </groups>
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 9" finished-at="2024-03-14T21:20:45 ICT" duration-ms="160">
+      <class name="tests.testng.TestNGHooks">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:20:45 ICT" name="beforeSuite" finished-at="2024-03-14T21:20:45 ICT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+      </class> <!-- tests.testng.TestNGHooks -->
+    </test> <!-- Group 9 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 8" finished-at="2024-03-14T21:20:45 ICT" duration-ms="157">
+    </test> <!-- Group 8 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 2" finished-at="2024-03-14T21:20:45 ICT" duration-ms="156">
+    </test> <!-- Group 2 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 7" finished-at="2024-03-14T21:20:45 ICT" duration-ms="156">
+    </test> <!-- Group 7 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 3" finished-at="2024-03-14T21:20:45 ICT" duration-ms="159">
+    </test> <!-- Group 3 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 1" finished-at="2024-03-14T21:20:45 ICT" duration-ms="149">
+    </test> <!-- Group 1 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 10" finished-at="2024-03-14T21:21:20 ICT" duration-ms="35095">
+      <class name="tests.testng.TestNGHooks">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:20:45 ICT" name="beforeTest" finished-at="2024-03-14T21:20:45 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:21:11 ICT" name="beforeClass" finished-at="2024-03-14T21:21:11 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:21:11 ICT" name="beforeMethod" finished-at="2024-03-14T21:21:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test1()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:21:11 ICT" name="test1" finished-at="2024-03-14T21:21:11 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:21:11 ICT" name="beforeMethod" finished-at="2024-03-14T21:21:11 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test2()[pri:0, instance:tests.testng.TestNGHooks@60b4beb4]" started-at="2024-03-14T21:21:11 ICT" name="test2" finished-at="2024-03-14T21:21:11 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- tests.testng.TestNGHooks -->
+      <class name="tests.testng.TestOrder">
+        <test-method signature="test1()[pri:1, instance:tests.testng.TestOrder@4196c360]" started-at="2024-03-14T21:21:11 ICT" name="test1" finished-at="2024-03-14T21:21:11 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:tests.testng.TestOrder@4196c360]" started-at="2024-03-14T21:21:11 ICT" name="test2" finished-at="2024-03-14T21:21:11 ICT" depends-on-methods="tests.testng.TestOrder.test1" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- tests.testng.TestOrder -->
+      <class name="tests.verifier.VerifierTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:20:45 ICT" name="initBrowserSession" description="Init browser session" finished-at="2024-03-14T21:20:45 ICT" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testHardAssertion()[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:20:45 ICT" name="testHardAssertion" finished-at="2024-03-14T21:20:45 ICT" duration-ms="299" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Displayed username is different expected [Ti] but found [Teo]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Displayed username is different expected [Ti] but found [Teo]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at tests.verifier.VerifierTest.testHardAssertion(VerifierTest.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHardAssertion -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:20:45 ICT" name="captureScreenshot" finished-at="2024-03-14T21:21:10 ICT" duration-ms="24527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHardAssertion status=FAILURE method=VerifierTest.testHardAssertion()[pri:0, instance:tests.verifier.VerifierTest@41294f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testSoftAssertion()[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:21:10 ICT" name="testSoftAssertion" finished-at="2024-03-14T21:21:10 ICT" duration-ms="93" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [2] but found [1],
+expected [false] but found [true],
+I want to]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [2] but found [1],
+expected [false] but found [true],
+I want to
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.verifier.VerifierTest.testSoftAssertion(VerifierTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoftAssertion -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:21:10 ICT" name="captureScreenshot" finished-at="2024-03-14T21:21:10 ICT" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSoftAssertion status=FAILURE method=VerifierTest.testSoftAssertion()[pri:0, instance:tests.verifier.VerifierTest@41294f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:tests.verifier.VerifierTest@41294f8]" started-at="2024-03-14T21:21:11 ICT" name="closeBrowserSession" finished-at="2024-03-14T21:21:20 ICT" duration-ms="9236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- tests.verifier.VerifierTest -->
+    </test> <!-- Group 10 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 4" finished-at="2024-03-14T21:21:35 ICT" duration-ms="50327">
+      <class name="tests.global.footer.FooterTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:20:45 ICT" name="initBrowserSession" description="Init browser session" finished-at="2024-03-14T21:20:45 ICT" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testCategoryPageFooter()[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:20:45 ICT" name="testCategoryPageFooter" finished-at="2024-03-14T21:21:28 ICT" duration-ms="43340" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[ERR] Footer column hrefs are different: Lists differ at element [0]: https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap != https://demowebshop.tricentis.com/sitemap expected [https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap] but found [https://demowebshop.tricentis.com/sitemap]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [ERR] Footer column hrefs are different: Lists differ at element [0]: https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap != https://demowebshop.tricentis.com/sitemap expected [https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap] but found [https://demowebshop.tricentis.com/sitemap]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:1479)
+at test_flows.global.FooterTestFlow.testFooterColumn(FooterTestFlow.java:122)
+at test_flows.global.FooterTestFlow.verifyInformationColumn(FooterTestFlow.java:78)
+at test_flows.global.FooterTestFlow.verifyFooterComponent(FooterTestFlow.java:34)
+at test_flows.global.FooterTestFlow.verifyProductCatFooterComponent(FooterTestFlow.java:69)
+at tests.global.footer.FooterTest.testCategoryPageFooter(FooterTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCategoryPageFooter -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:21:28 ICT" name="captureScreenshot" finished-at="2024-03-14T21:21:29 ICT" duration-ms="846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCategoryPageFooter status=FAILURE method=FooterTest.testCategoryPageFooter()[pri:0, instance:tests.global.footer.FooterTest@6676f6a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testHomePageFooter()[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:21:29 ICT" name="testHomePageFooter" finished-at="2024-03-14T21:21:32 ICT" duration-ms="2658" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[ERR] Footer column hrefs are different: Lists differ at element [0]: https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap != https://demowebshop.tricentis.com/sitemap expected [https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap] but found [https://demowebshop.tricentis.com/sitemap]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [ERR] Footer column hrefs are different: Lists differ at element [0]: https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap != https://demowebshop.tricentis.com/sitemap expected [https://demowebshop.tricentis.comhttps://demowebshop.tricentis.com/sitemap] but found [https://demowebshop.tricentis.com/sitemap]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:1479)
+at test_flows.global.FooterTestFlow.testFooterColumn(FooterTestFlow.java:122)
+at test_flows.global.FooterTestFlow.verifyInformationColumn(FooterTestFlow.java:78)
+at test_flows.global.FooterTestFlow.verifyFooterComponent(FooterTestFlow.java:34)
+at tests.global.footer.FooterTest.testHomePageFooter(FooterTest.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageFooter -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:21:32 ICT" name="captureScreenshot" finished-at="2024-03-14T21:21:32 ICT" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHomePageFooter status=FAILURE method=FooterTest.testHomePageFooter()[pri:0, instance:tests.global.footer.FooterTest@6676f6a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:tests.global.footer.FooterTest@6676f6a0]" started-at="2024-03-14T21:21:32 ICT" name="closeBrowserSession" finished-at="2024-03-14T21:21:35 ICT" duration-ms="2819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- tests.global.footer.FooterTest -->
+    </test> <!-- Group 4 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 5" finished-at="2024-03-14T21:22:23 ICT" duration-ms="98426">
+      <class name="tests.order.computer.BuyingCheapComputerTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:20:45 ICT" name="initBrowserSession" description="Init browser session" finished-at="2024-03-14T21:20:45 ICT" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:20:45 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2024-03-14T21:22:02 ICT" duration-ms="77242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processor='Slow', ram='8 GB', os='null', hdd='320 GB', software='Office Suite'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheapComputerBuying -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:22:02 ICT" name="captureScreenshot" finished-at="2024-03-14T21:22:02 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:22:02 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2024-03-14T21:22:23 ICT" duration-ms="20593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processor='Medium', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheapComputerBuying -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:22:23 ICT" name="captureScreenshot" finished-at="2024-03-14T21:22:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:tests.order.computer.BuyingCheapComputerTest@6cb6decd]" started-at="2024-03-14T21:22:23 ICT" name="closeBrowserSession" finished-at="2024-03-14T21:22:23 ICT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- tests.order.computer.BuyingCheapComputerTest -->
+    </test> <!-- Group 5 -->
+    <test started-at="2024-03-14T21:20:45 ICT" name="Group 6" finished-at="2024-03-14T21:22:25 ICT" duration-ms="100080">
+      <class name="tests.order.computer.BuyingStandardComputerTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:20:45 ICT" name="initBrowserSession" description="Init browser session" finished-at="2024-03-14T21:20:45 ICT" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserSession -->
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:20:45 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2024-03-14T21:22:03 ICT" duration-ms="77548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processor='2.2GHz', ram='2GB', os='Ubuntu', hdd='320 GB', software='Microsoft Office'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStandardComputerBuying -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:22:03 ICT" name="captureScreenshot" finished-at="2024-03-14T21:22:03 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:22:03 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2024-03-14T21:22:25 ICT" duration-ms="21865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerData{processor='2.5GHz', ram='4GB', os='Windows 10', hdd='400 GB', software='Acrobat Reader'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStandardComputerBuying -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:22:25 ICT" name="captureScreenshot" finished-at="2024-03-14T21:22:25 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:tests.order.computer.BuyingStandardComputerTest@5b3f61ff]" started-at="2024-03-14T21:22:25 ICT" name="closeBrowserSession" finished-at="2024-03-14T21:22:25 ICT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- tests.order.computer.BuyingStandardComputerTest -->
+    </test> <!-- Group 6 -->
+  </suite> <!-- Regression -->
+</testng-results>
